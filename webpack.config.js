@@ -10,7 +10,7 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: path.join(__dirname, 'app/js'),
+                test: path.join(__dirname, 'app'),
                 loader: ['babel-loader'],
                 query: {
                     cacheDirectory: 'babel_cache',
@@ -23,13 +23,13 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify("development")
         }),
-        new webpack.optimize.OccurrenceOrderPlugin(),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: { warnings: false },
-            mangle: true,
-            sourcemap: false,
-            beautify: false,
-            dead_code: true
-        })
+        new webpack.optimize.OccurrenceOrderPlugin() //,
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress: { warnings: false },
+        //     mangle: true,
+        //     sourcemap: false,
+        //     beautify: false,
+        //     dead_code: true
+        // })
     ]
 };

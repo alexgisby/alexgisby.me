@@ -8,5 +8,5 @@ gulp.task('ci', ['sass', 'webpack']);
 
 gulp.task('watch', function() {
     gulp.watch('./app/scss/*.scss', ['sass']);
-    gulp.watch('./app/js/**/*.js', ['webpack']);
+    gulp.watch('./app/**/*.*', ['webpack']);
 });

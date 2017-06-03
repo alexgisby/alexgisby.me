@@ -8,9 +8,7 @@ export default class Layout extends React.Component
         return (
             <div className="application-container">
                 <HeaderSection />
-                <div className="main-container">
-                    <h1>Hello From Layout!</h1>
-                </div>
+                {this.props.children}
                 <FooterSection/>
             </div>
         );
