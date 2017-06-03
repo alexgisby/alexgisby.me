@@ -12,4 +12,8 @@ export default class Tag
     getType() {
         return this.data.type;
     }
+
+    getUrl() {
+        return '/tag/'+encodeURIComponent(this.data.name.toLowerCase()).replace(/%20/g, '+');
+    }
 }

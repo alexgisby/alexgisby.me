@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 export default class Tag extends React.Component
 {
@@ -16,7 +17,9 @@ export default class Tag extends React.Component
 
         return (
             <li>
-                <a href="#" className={'chip '+colourClass}>{this.props.tag.getName()}</a>
+                <Link to={this.props.tag.getUrl()} className={'chip '+colourClass}>
+                    {this.props.tag.getName()}
+                </Link>
             </li>
         );
     }
