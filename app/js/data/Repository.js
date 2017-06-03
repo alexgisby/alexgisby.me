@@ -28,4 +28,16 @@ export default class Repository
         });
         return allGroups;
     }
+
+    fetchTagByUrlKey(urlKey) {
+        for (let i = 0; i < this.database.tags.length; i ++) {
+            let t = new Tag(this.database.tags[i]);
+            console.log(t.getUrl());
+            console.log(urlKey);
+            if (t.getUrl() === '/tag/'+urlKey) {
+                return t;
+            }
+        }
+        return false;
+    }
 }

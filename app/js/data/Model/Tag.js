@@ -14,6 +14,10 @@ export default class Tag
     }
 
     getUrl() {
-        return '/tag/'+encodeURIComponent(this.data.name.toLowerCase()).replace(/%20/g, '+');
+        return '/tag/'+this.data.url;
+    }
+
+    getDescription() {
+        return this.data.description || '';
     }
 }
