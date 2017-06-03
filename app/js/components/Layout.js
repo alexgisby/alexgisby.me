@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderSection from './Section/HeaderSection';
+import FooterSection from './Section/FooterSection';
 
 export default class Layout extends React.Component
 {
@@ -10,7 +11,8 @@ export default class Layout extends React.Component
                 <div className="main-container">
                     <h1>Hello From Layout!</h1>
                 </div>
+                <FooterSection/>
             </div>
-        )
+        );
     }
 }
