@@ -1,0 +1,5 @@
+.DS_Store
+.idea/
+alexgisby.me.iml
+babel_cache/
+node_modules/
