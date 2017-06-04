@@ -5,6 +5,10 @@ export default class Tag
         this.data = data;
     }
 
+    getId() {
+        return this.data.url;
+    }
+
     getName() {
         return this.data.name;
     }

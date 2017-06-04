@@ -17,8 +17,8 @@ export default class Tag extends React.Component
 
         return (
             <li>
-                <Link to={this.props.tag.getUrl()} className={'chip '+colourClass}>
-                    {this.props.tag.getName()}
+                <Link to={tag.getUrl()} className={'chip '+colourClass}>
+                    {tag.getName()}
                 </Link>
             </li>
         );

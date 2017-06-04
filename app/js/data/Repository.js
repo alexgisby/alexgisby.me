@@ -1,11 +1,11 @@
 import TagCollection from './Model/TagCollection';
 import Tag from './Model/Tag';
+import Project from './Model/Project';
 
 export default class Repository
 {
     constructor(data) {
         this.database = data;
-        console.log(this.database);
     }
 
     fetchTagsGroupedByType() {
@@ -32,12 +32,17 @@ export default class Repository
     fetchTagByUrlKey(urlKey) {
         for (let i = 0; i < this.database.tags.length; i ++) {
             let t = new Tag(this.database.tags[i]);
-            console.log(t.getUrl());
-            console.log(urlKey);
-            if (t.getUrl() === '/tag/'+urlKey) {
+            if (t.getId() === urlKey) {
                 return t;
             }
         }
         return false;
+    }
+
+    fetchProjectsForTag(tag) {
+        const projects = this.database.projects.filter(project => {
+            return project.tags.indexOf(tag.getId()) !== -1;
+        });
+        return projects.map(project => new Project(project));
     }
 }

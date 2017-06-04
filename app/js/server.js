@@ -28,7 +28,7 @@ app.get('*', (req, res) => {
             if (renderProps) {
                 markup = renderToString(<RouterContext {...renderProps}/>)
             } else {
-                markup = renderToString(<NotFoundPage/>);
+                // markup = renderToString(<NotFoundPage/>);
                 res.status(404);
             }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Repository from '../../data/Repository';
 import data from '../../../data/database';
+import ProjectsList from '../Organism/ProjectsList';
 
 export default class TagPage extends React.Component
 {
@@ -10,13 +11,13 @@ export default class TagPage extends React.Component
         const tagKey = this.props.params.tag;
         const tag = repo.fetchTagByUrlKey(tagKey);
 
-        console.log(tagKey);
-        console.log(tag);
+        const projects = repo.fetchProjectsForTag(tag);
 
         return (
             <div className="tag-details container white-text">
                 <h2>{tag.getName()}</h2>
                 <p>{tag.getDescription()}</p>
+                <ProjectsList projects={projects} />
             </div>
         );
     }

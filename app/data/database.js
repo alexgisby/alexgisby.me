@@ -149,6 +149,29 @@ const data =
             "type": "practices",
             "description": "I was a drama GCSE kid, so I rather like being on stage and performing. Especially when I get to talk about things that really matter to me. Like code. Or mountain bikes. Or why Tangled is probably the best Disney movie ever made."
         }
+    ],
+    "projects": [
+        {
+            "title": "Principal Web Developer & Tech Lead - BBC iPlayer Radio",
+            "type": "work",
+            "dates": "2012 - 2017",
+            "description": "Leading the team both in terms of software development and line management, my main achievement was the design and implementation of the next-gen PHP platform for iPlayer Radio; from the RPM build tools to package the app through to leading the development of client libraries and application paradigms. The resulting composition based architecture scaled to over a million requests a day on minimal hardware (~ 5 instances total)",
+            "external_links": [
+                {
+                    "title": "Read more on my LinkedIn profile",
+                    "url": "https://www.linkedin.com/in/alexgisby/"
+                },
+                {
+                    "title": "See the packages we open-sourced as part of the project.",
+                    "url": "https://packagist.org/packages/bbc"
+                }
+            ],
+            "tags": [
+                "php", "javascript", "html", "css-sass", "python", "silex", "amazon-web-services",
+                "service-oriented-architecture-rest", "team-leadership", "high-scale", "nginx", "redis-memcached",
+                "akamai-cloudfront", "test-driven-development", "open-source"
+            ]
+        }
     ]
 };
 
