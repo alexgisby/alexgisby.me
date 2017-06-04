@@ -6,7 +6,6 @@ export default class Project extends React.Component
 {
     render() {
         const project = this.props.project;
-        console.log(project.tags);
         return (
             <div className="project">
                 <h4>{project.title}</h4>

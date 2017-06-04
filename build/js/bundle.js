@@ -5941,7 +5941,77 @@
 	            "title": "See the packages we open-sourced as part of the project.",
 	            "url": "https://packagist.org/packages/bbc"
 	        }],
-	        "tags": ["php", "javascript", "html", "css-sass", "python", "silex", "amazon-web-services", "service-oriented-architecture-rest", "team-leadership", "high-scale", "nginx", "redis-memcached", "akamai-cloudfront", "test-driven-development", "open-source"]
+	        "tags": ["php", "javascript", "html", "css-sass", "python", "silex", "symfony", "amazon-web-services", "service-oriented-architecture-rest", "team-leadership", "high-scale", "nginx", "redis-memcached", "akamai-cloudfront", "test-driven-development", "open-source"]
+	    }, {
+	        "title": "Solution10 Libraries",
+	        "type": "code",
+	        "description": "The Solution10 libraries are a set of packages I've written over the years to solve various problems in the PHP space. All of them use Packagist for distribution and TravisCI for continuous integration.",
+	        "external_links": [{
+	            "title": "Solution10 on Packagist",
+	            "url": "https://packagist.org/packages/Solution10"
+	        }, {
+	            "title": "Solution10 on GitHub",
+	            "url": "https://github.com/Solution10"
+	        }],
+	        "tags": ["php", "open-source"]
+	    }, {
+	        "title": "Web Developer - Wallpaper.com (Time Inc)",
+	        "type": "work",
+	        "dates": "2011 - 2012",
+	        "description": "Developer for Wallpaper.com, an international website handling around 5.5 million page views a month. Based on Zend Framework, CodeIgniter and Akamai, with a MySQL database backend. Also created Wallpaper.cn a Chinese variant of the site requiring substantial refactoring to support multi-language content from CMS through to frontend.",
+	        "external_links": [{
+	            "title": "Read more on my LinkedIn profile",
+	            "url": "https://www.linkedin.com/in/alexgisby/"
+	        }],
+	        "tags": ["php", "javascript", "mysql-postgres", "high-scale", "akamai-cloudfront"]
+	    }, {
+	        "title": "PHP MVC Developer - v4 Technical",
+	        "type": "work",
+	        "dates": "2009 - 2011",
+	        "description": "Building everything from e-commerce platforms to internal communication tools, usually in Kohana, with MySQL backends.",
+	        "external_links": [{
+	            "title": "Read more on my LinkedIn profile",
+	            "url": "https://www.linkedin.com/in/alexgisby/"
+	        }],
+	        "tags": ["php", "javascript", "mysql-postgres"]
+	    }, {
+	        "title": "PHP at the BBC - develop: BBC Conference",
+	        "type": "speaking",
+	        "dates": "2016",
+	        "description": "An internally focused talk to advertise and promote the work myself and my team had done around working with PHP on AWS including the build tools, RPM repos and libraries for internal services we had created.",
+	        "external_links": [{
+	            "title": "develop:BBC website",
+	            "url": "http://www.bbc.co.uk/academy/technology/Develop-BBC-2016"
+	        }],
+	        "tags": ["speaking", "php", "amazon-web-services"]
+	    }, {
+	        "title": "Building Next-gen Webapps at the BBC - FrontEnd Suffolk Talk",
+	        "type": "speaking",
+	        "dates": "Jan 2015",
+	        "description": "A talk to the local web dev usergroup in my hometown about our work defining the new platform for building our web applications within the iPlayer Radio team at the BBC.",
+	        "external_links": [{
+	            "title": "FESuffolk Talk Page",
+	            "url": "http://www.fesuffolk.co.uk/talks/58"
+	        }],
+	        "tags": ["speaking"]
+	    }, {
+	        "title": "imgur-album-downloader",
+	        "type": "code",
+	        "description": "A little utility that quickly got out of hand, this was my first open-source Python project that has grown to a modest popularity. A cheeky way of grabbing the images from an Imgur album without going via the API. Really popular with certain Subreddit users, not sure why...",
+	        "external_links": [{
+	            "title": "imgur-album-downloader on GitHub",
+	            "url": "https://github.com/alexgisby/imgur-album-downloader"
+	        }],
+	        "tags": ["python", "open-source"]
+	    }, {
+	        "title": "alexgisby.me",
+	        "type": "code",
+	        "description": "A ReactJS based portfolio site, and a chance for me to sink my teeth into AWS Lambda and universal Javascript applications.",
+	        "external_links": [{
+	            "title": "How I built alexgisby.me",
+	            "url": "https://github.com/alexgisby/alexgisby.me/blob/master/README.md"
+	        }],
+	        "tags": ["javascript", "reactjs", "express", "amazon-web-services"]
 	    }]
 	};
 
@@ -13197,7 +13267,6 @@
 	        key: 'render',
 	        value: function render() {
 	            var project = this.props.project;
-	            console.log(project.tags);
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'project' },
@@ -13300,11 +13369,7 @@
 	            return _react2.default.createElement(
 	                'section',
 	                { className: 'project-list-container' },
-	                _react2.default.createElement(
-	                    'h3',
-	                    { className: 'blue-grey-text text-darken-3' },
-	                    'Experience'
-	                ),
+	                _react2.default.createElement('hr', null),
 	                _react2.default.createElement(
 	                    'ul',
 	                    { className: 'project-list' },
@@ -13843,6 +13908,10 @@
 	    switch (data.type) {
 	        case 'work':
 	            this.icon = 'briefcase';
+	            break;
+
+	        case 'speaking':
+	            this.icon = 'commenting';
 	            break;
 
 	        default:

@@ -17,6 +17,10 @@ export default class Project
                 this.icon = 'briefcase';
                 break;
 
+            case 'speaking':
+                this.icon = 'commenting';
+                break;
+
             default:
                 this.icon = 'code';
                 break;
