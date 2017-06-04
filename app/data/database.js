@@ -45,6 +45,12 @@ const data =
             "type": "languages",
             "description": "I sling SQL like it's going out of fashion. Oh, it is? Nah, SQL will never die. I understand indexes and third normal form, and I usually know when to ignore them too."
         },
+        {
+            "name": "Scala",
+            "url": "scala",
+            "type": "languages",
+            "description": "I'm a Scala newbie, but have undertaken training and liked what I saw."
+        },
 
         {
             "name": "Silex",
@@ -202,7 +208,7 @@ const data =
                 }
             ],
             "tags": [
-                "javascript", "reactjs", "express", "amazon-web-services"
+                "javascript", "html", "css-sass", "reactjs", "express", "amazon-web-services"
             ]
         },
         {
@@ -217,7 +223,7 @@ const data =
                 }
             ],
             "tags": [
-                "php", "javascript", "zend-framework", "mysql-postgres", "high-scale", "akamai-cloudfront",
+                "php", "javascript", "html", "css-sass", "zend-framework", "mysql-postgres", "high-scale", "akamai-cloudfront",
                 "behaviour-driven-development"
             ]
         },
@@ -233,7 +239,7 @@ const data =
                 }
             ],
             "tags": [
-                "php", "javascript", "mysql-postgres"
+                "php", "javascript", "html", "css-sass", "mysql-postgres"
             ]
         },
         {
@@ -279,7 +285,52 @@ const data =
             "tags": [
                 "python", "open-source"
             ]
+        },
+        {
+            "title": "Personal Projects",
+            "type": "personal",
+            "description": "In my free time, I've experimented with creating board games in Javascript, equipment booking systems, RESTful calendar APIs, game dev with Unity and SDL and more besides that I couldn't hope to list here. If you're interested in what else I can or want to do, why not get in touch?",
+            "external_links": [],
+            "tags": [
+                "php", "silex", "javascript", "ruby", "html", "css-sass", "service-oriented-architecture-rest", "open-source"
+            ]
+        },
+        {
+            "title": "Scala Training",
+            "type": "training",
+            "dates": "2016",
+            "description": "A three day course taking a look into the Scala programming language, also covering functional programming.",
+            "external_links": [],
+            "tags": [
+                "scala"
+            ]
+        },
+        {
+            "title": "Architecting on AWS Training",
+            "type": "training",
+            "dates": "2015",
+            "description": "The official three day Architecting on AWS training in preparation for the Solution Architect - Associate exam.",
+            "external_links": [
+                {
+                    "title": "Architecting on AWS Course",
+                    "url": "https://aws.amazon.com/training/course-descriptions/architect/"
+                }
+            ],
+            "tags": [
+                "amazon-web-services"
+            ]
+        },
+        {
+            "title": "Ruby & Cucumber Training",
+            "type": "training",
+            "dates": "2014",
+            "description": "A three day course around writing feature files, the ruby programming language and automating testing in a BDD way.",
+            "external_links": [],
+            "tags": [
+                "ruby", "behaviour-driven-development"
+            ]
         }
+
     ]
 };
 

@@ -23,8 +23,8 @@ export default class FooterSection extends React.Component
                         <div className="col l4 s12">
                             <ul className="right-align">
                                 <li>
-                                    <a href="mailto:hi@alexgisby.me" className="white-text">
-                                        hi@alexgisby.me <i className="fa fa-envelope" />
+                                    <a href="mailto:alex@solution10.com" className="white-text">
+                                        alex@solution10.com <i className="fa fa-envelope" />
                                     </a>
                                 </li>
                                 <li>

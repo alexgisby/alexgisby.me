@@ -15,11 +15,11 @@ export default class Project extends React.Component
                             <i className={'jumbo fa fa-'+project.icon} />
                         </div>
 
-                        { project.dates &&
+                        {project.dates &&
                             <p className="project-dates center-align">{project.dates}</p>
                         }
 
-                        {project.externalLinks.length &&
+                        {project.externalLinks.length > 0 &&
                             <ul className="external-links browser-default">
                                 {project.externalLinks.map(link => {
                                     return (<li key={link.url}>

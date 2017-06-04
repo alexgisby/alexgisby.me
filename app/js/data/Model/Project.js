@@ -21,6 +21,14 @@ export default class Project
                 this.icon = 'commenting';
                 break;
 
+            case 'personal':
+                this.icon = 'rocket';
+                break;
+
+            case 'training':
+                this.icon = 'graduation-cap';
+                break;
+
             default:
                 this.icon = 'code';
                 break;

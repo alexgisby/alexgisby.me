@@ -3,6 +3,7 @@ import HeaderSection from '../Section/HeaderSection';
 import Repository from '../../data/Repository';
 import data from '../../../data/database';
 import ProjectsList from '../Organism/ProjectsList';
+import NotFoundPage from '../Page/NotFoundPage';
 
 export default class TagPage extends React.Component
 {
@@ -11,6 +12,12 @@ export default class TagPage extends React.Component
 
         const tagKey = this.props.params.tag;
         const tag = repo.fetchTagByUrlKey(tagKey);
+
+        if (!tag) {
+            return (
+                <NotFoundPage />
+            );
+        }
 
         const projects = repo.fetchProjectsForTag(tag);
 

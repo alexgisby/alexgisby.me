@@ -4,6 +4,7 @@ import React from 'react';
 import {renderToString} from 'react-dom/server';
 import {match, RouterContext} from 'react-router';
 import routes from './routes';
+import NotFoundPage from './components/Page/NotFoundPage';
 
 const app = new Express();
 
@@ -28,7 +29,7 @@ app.get('*', (req, res) => {
             if (renderProps) {
                 markup = renderToString(<RouterContext {...renderProps}/>)
             } else {
-                // markup = renderToString(<NotFoundPage/>);
+                markup = renderToString(<NotFoundPage />);
                 res.status(404);
             }
 
