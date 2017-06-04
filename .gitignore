@@ -3,3 +3,5 @@
 alexgisby.me.iml
 babel_cache/
 node_modules/
+build/js
+build/app
