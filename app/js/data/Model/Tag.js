@@ -18,7 +18,7 @@ export default class Tag
     }
 
     getUrl() {
-        return '/tag/'+this.data.url;
+        return '/'+this.data.url;
     }
 
     getDescription() {

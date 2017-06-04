@@ -1,4 +1,5 @@
 import React from 'react';
+import HeaderSection from '../Section/HeaderSection';
 import Repository from '../../data/Repository';
 import data from '../../../data/database';
 import ProjectsList from '../Organism/ProjectsList';
@@ -14,10 +15,13 @@ export default class TagPage extends React.Component
         const projects = repo.fetchProjectsForTag(tag);
 
         return (
-            <div className="tag-details container white-text">
-                <h2>{tag.getName()}</h2>
-                <p>{tag.getDescription()}</p>
-                <ProjectsList projects={projects} />
+            <div id="page-tag">
+                <HeaderSection size="small" />
+                <div className="tag-details container white-text">
+                    <h2>{tag.getName()}</h2>
+                    <p>{tag.getDescription()}</p>
+                    <ProjectsList projects={projects} />
+                </div>
             </div>
         );
     }

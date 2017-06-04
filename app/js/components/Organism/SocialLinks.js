@@ -15,7 +15,7 @@ export default class SocialLinks extends React.Component
         return (
             <div className="extlinks-container blue-grey darken-2">
                 <div className="container">
-                    <div className="row">
+                    <div className="row extlinks-row">
                         {
                             this.props.children.map(
                                 (child, index) => <SocialLinkWrapper key={index} link={child} size={perLink}/>

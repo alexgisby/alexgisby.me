@@ -7,7 +7,7 @@ import TagPage from "./components/Page/TagPage";
 const routes = (
     <Route path="/" component={Layout}>
         <IndexRoute component={IndexPage} />
-        <Route path="tag/:tag" component={TagPage} />
+        <Route path="/:tag" component={TagPage} />
     </Route>
 );
 

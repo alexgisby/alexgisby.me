@@ -53,21 +53,22 @@ const data =
             "description": "My weapon of choice, I love this framework. All my personal projects and several of my work ones are in Silex."
         },
         {
+            "name": "ReactJS",
+            "url": "reactjs",
+            "type": "frameworks",
+            "description": "I'm relatively new to the world of ReactJS, but I'm in love. I've been wanting a framework like this for a long time - a proper view layer for the web. This site here is built in React."
+        },
+        {
             "name": "Symfony",
             "url": "symfony",
             "type": "frameworks",
             "description": "Mostly prototyping and personal projects, I tend to prefer a slimmer, more tailored experience. But naturally, for a PHP dev, I'm comfortable with Symfony and it's components."
         },
         {
-            "name": "Laravel",
-            "url": "laravel",
-            "type": "frameworks"
-        },
-        {
-            "name": "ReactJS",
-            "url": "reactjs",
+            "name": "Zend Framework",
+            "url": "zend-framework",
             "type": "frameworks",
-            "description": "I'm relatively new to the world of ReactJS, but I'm in love. I've been wanting a framework like this for a long time - a proper view layer for the web. This site here is built in React."
+            "description": "I know Zend Framework 1.x far better than I'd like to. We'll leave it at that."
         },
         {
             "name": "Express",
@@ -167,9 +168,9 @@ const data =
                 }
             ],
             "tags": [
-                "php", "javascript", "html", "css-sass", "python", "silex", "symfony", "amazon-web-services",
+                "php", "javascript", "html", "css-sass", "python", "ruby", "silex", "symfony", "zend-framework", "amazon-web-services",
                 "service-oriented-architecture-rest", "team-leadership", "high-scale", "nginx", "redis-memcached",
-                "akamai-cloudfront", "test-driven-development", "open-source"
+                "akamai-cloudfront", "test-driven-development", "behaviour-driven-development", "open-source"
             ]
         },
         {
@@ -191,6 +192,20 @@ const data =
             ]
         },
         {
+            "title": "alexgisby.me",
+            "type": "code",
+            "description": "A ReactJS based portfolio site, and a chance for me to sink my teeth into AWS Lambda and universal Javascript applications.",
+            "external_links": [
+                {
+                    "title": "How I built alexgisby.me",
+                    "url": "https://github.com/alexgisby/alexgisby.me/blob/master/README.md"
+                }
+            ],
+            "tags": [
+                "javascript", "reactjs", "express", "amazon-web-services"
+            ]
+        },
+        {
             "title": "Web Developer - Wallpaper.com (Time Inc)",
             "type": "work",
             "dates": "2011 - 2012",
@@ -202,7 +217,8 @@ const data =
                 }
             ],
             "tags": [
-                "php", "javascript", "mysql-postgres", "high-scale", "akamai-cloudfront"
+                "php", "javascript", "zend-framework", "mysql-postgres", "high-scale", "akamai-cloudfront",
+                "behaviour-driven-development"
             ]
         },
         {
@@ -262,20 +278,6 @@ const data =
             ],
             "tags": [
                 "python", "open-source"
-            ]
-        },
-        {
-            "title": "alexgisby.me",
-            "type": "code",
-            "description": "A ReactJS based portfolio site, and a chance for me to sink my teeth into AWS Lambda and universal Javascript applications.",
-            "external_links": [
-                {
-                    "title": "How I built alexgisby.me",
-                    "url": "https://github.com/alexgisby/alexgisby.me/blob/master/README.md"
-                }
-            ],
-            "tags": [
-                "javascript", "reactjs", "express", "amazon-web-services"
             ]
         }
     ]
