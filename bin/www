@@ -5,7 +5,7 @@
  */
 
 const app = require('../app/js/server');
-const debug = require('debug')('moko-react:server');
+const debug = require('debug')('alexgisbyme:server');
 const http = require('http');
 
 /**
