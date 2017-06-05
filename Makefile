@@ -5,7 +5,7 @@ watch:
 	gulp watch
 
 webpack:
-	gulp webpack
+	./node_modules/.bin/webpack -p
 
 sass:
 	gulp sass
