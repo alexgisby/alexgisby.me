@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "alexgisbyme-executor",
+    "name": "alexgisbyme",
+    "region": "eu-west-1"
+  },
+  "api": {
+    "id": "b6ihz9ydga"
+  }
+}

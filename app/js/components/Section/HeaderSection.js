@@ -2,10 +2,12 @@ import React from 'react';
 import {Link} from 'react-router';
 import SocialLinks from '../Organism/SocialLinks';
 import SocialLink from "../Molecule/SocialLink";
+import AssetHelper from "../../lib/AssetHelper";
 
 export default class HeaderSection extends React.Component
 {
     render() {
+        const assets = new AssetHelper();
         const size = this.props.size || 'large';
 
         if (size === 'small') {
@@ -21,7 +23,7 @@ export default class HeaderSection extends React.Component
                             <div className="col s11 m6">
                                 <div className="title-avatar">
                                     <Link to={'/'} className="white-text">
-                                        <img className="circle avatar" src="/img/profile.jpg"/>
+                                        <img className="circle avatar" src={`${assets.assetPath()}/img/profile.jpg`} />
                                         <h1>Alex Gisby</h1>
                                         <p>Principal Web Developer and Tech Lead</p>
                                     </Link>
@@ -48,7 +50,7 @@ export default class HeaderSection extends React.Component
                 <header className="blue-grey darken-3 white-text size-large">
                     <div className="title-avatar container">
                         <Link to={'/'} className="white-text">
-                            <img className="circle avatar" src="/img/profile.jpg"/>
+                            <img className="circle avatar" src={`${assets.assetPath()}/img/profile.jpg`} />
                             <h1>Alex Gisby</h1>
                             <p>Principal Web Developer and Tech Lead</p>
                         </Link>

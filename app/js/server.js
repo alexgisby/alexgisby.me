@@ -5,6 +5,7 @@ import {renderToString} from 'react-dom/server';
 import {match, RouterContext} from 'react-router';
 import routes from './routes';
 import NotFoundPage from './components/Page/NotFoundPage';
+import AssetHelper from './lib/AssetHelper';
 
 const app = new Express();
 
@@ -33,7 +34,8 @@ app.get('*', (req, res) => {
                 res.status(404);
             }
 
-            return res.render('layout', {markup});
+            const assetPath = (new AssetHelper()).assetPath();
+            return res.render('layout', {markup, assetPath});
         }
     )
 });

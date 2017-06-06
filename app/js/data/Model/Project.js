@@ -37,7 +37,6 @@ export default class Project
         // Handle tags:
         const repo = new Repository(repoData);
         this.tags = data.tags.map(tag => {
-            console.log(tag);
             return repo.fetchTagByUrlKey(tag);
         });
     }
