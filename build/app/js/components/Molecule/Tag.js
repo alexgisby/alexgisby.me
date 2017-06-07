@@ -35,6 +35,7 @@ var Tag = function (_React$Component) {
             var tag = this.props.tag;
 
             var colourClassMap = {
+                'experience': 'white',
                 'languages': 'blue white-text',
                 'frameworks': 'green white-text',
                 'devops': 'yellow',

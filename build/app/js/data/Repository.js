@@ -68,9 +68,31 @@ var Repository = function () {
             var projects = this.database.projects.filter(function (project) {
                 return project.tags.indexOf(tag.getId()) !== -1;
             });
-            return projects.map(function (project) {
+
+            var projectObjects = projects.map(function (project) {
                 return new _Project2.default(project);
             });
+            projectObjects.sort(function (a, b) {
+                if (a.dates.end === b.dates.end) {
+                    if (!a.dates.hasOwnProperty('start')) {
+                        return 1;
+                    }
+                    if (!b.dates.hasOwnProperty('start')) {
+                        return -1;
+                    }
+
+                    return a.dates.start < b.dates.start ? 1 : -1;
+                }
+
+                if (a.dates.end < b.dates.end) {
+                    return 1;
+                } else if (a.dates.end > b.dates.end) {
+                    return -1;
+                }
+                return 0;
+            });
+
+            return projectObjects;
         }
     }]);
 

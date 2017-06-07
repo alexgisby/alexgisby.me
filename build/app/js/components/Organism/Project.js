@@ -58,10 +58,11 @@ var Project = function (_React$Component) {
                             { className: 'center-align project-icon' },
                             _react2.default.createElement('i', { className: 'jumbo fa fa-' + project.icon })
                         ),
-                        project.dates && _react2.default.createElement(
+                        _react2.default.createElement(
                             'p',
                             { className: 'project-dates center-align' },
-                            project.dates
+                            project.dates.start && project.dates.start + ' - ',
+                            project.dates.end
                         ),
                         project.externalLinks.length > 0 && _react2.default.createElement(
                             'ul',

@@ -39,7 +39,7 @@ var TagGroup = function (_React$Component) {
                 { className: 'skills-group row' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'col s3' },
+                    { className: 'col m3 s12' },
                     _react2.default.createElement(
                         'h2',
                         { className: 'blue-grey-text text-lighten-4' },
@@ -48,7 +48,7 @@ var TagGroup = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     'div',
-                    { className: 'col s9' },
+                    { className: 'col m9 s12' },
                     _react2.default.createElement(_TagList2.default, { tags: this.props.group.tags })
                 )
             );

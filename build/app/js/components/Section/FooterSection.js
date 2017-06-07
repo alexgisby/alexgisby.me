@@ -65,7 +65,7 @@ var FooterSection = function (_React$Component) {
                                         null,
                                         "do not"
                                     ),
-                                    " reply to \"I have a client...\" emails. Contact me directly, name the company or gtfo!"
+                                    " reply to \"I have a client...\" emails. Please make sure to name the company in any emails you send to me."
                                 )
                             )
                         ),

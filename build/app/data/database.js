@@ -5,6 +5,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 var data = {
     "tags": [{
+        "name": "Work",
+        "url": "work",
+        "type": "experience",
+        "description": "These are some of the things I've done for money."
+    }, {
+        "name": "Personal",
+        "url": "personal",
+        "type": "experience",
+        "description": "These are some of the things I get up to in my spare time."
+    }, {
+        "name": "Training",
+        "url": "training",
+        "type": "experience",
+        "description": "These are some of the things I've been taught."
+    }, {
+        "name": "Talks",
+        "url": "talks",
+        "type": "experience",
+        "description": "These are some of the things I've said to a room of people."
+    }, {
         "name": "PHP",
         "url": "php",
         "type": "languages",
@@ -133,7 +153,7 @@ var data = {
     "projects": [{
         "title": "Principal Web Developer & Tech Lead - BBC iPlayer Radio",
         "type": "work",
-        "dates": "2012 - 2017",
+        "dates": { "start": 2012, "end": 2017 },
         "description": "Leading the team both in terms of software development and line management, my main achievement was the design and implementation of the next-gen PHP platform for iPlayer Radio; from the RPM build tools to package the app through to leading the development of client libraries and application paradigms. The resulting composition based architecture scaled to over a million requests a day on minimal hardware (~ 5 instances total)",
         "external_links": [{
             "title": "Read more on my LinkedIn profile",
@@ -142,10 +162,11 @@ var data = {
             "title": "See the packages we open-sourced as part of the project.",
             "url": "https://packagist.org/packages/bbc"
         }],
-        "tags": ["php", "javascript", "html", "css-sass", "python", "ruby", "silex", "symfony", "zend-framework", "amazon-web-services", "service-oriented-architecture-rest", "team-leadership", "high-scale", "nginx", "redis-memcached", "akamai-cloudfront", "test-driven-development", "behaviour-driven-development", "open-source"]
+        "tags": ["work", "php", "javascript", "html", "css-sass", "python", "ruby", "silex", "symfony", "zend-framework", "amazon-web-services", "service-oriented-architecture-rest", "team-leadership", "high-scale", "nginx", "redis-memcached", "akamai-cloudfront", "test-driven-development", "behaviour-driven-development", "open-source"]
     }, {
         "title": "Solution10 Libraries",
         "type": "code",
+        "dates": { "start": 2014, "end": 2017 },
         "description": "The Solution10 libraries are a set of packages I've written over the years to solve various problems in the PHP space. All of them use Packagist for distribution and TravisCI for continuous integration.",
         "external_links": [{
             "title": "Solution10 on Packagist",
@@ -154,95 +175,108 @@ var data = {
             "title": "Solution10 on GitHub",
             "url": "https://github.com/Solution10"
         }],
-        "tags": ["php", "open-source"]
+        "tags": ["personal", "php", "open-source"]
     }, {
         "title": "alexgisby.me",
         "type": "code",
+        "dates": { "end": 2017 },
         "description": "A ReactJS based portfolio site, and a chance for me to sink my teeth into AWS Lambda and universal Javascript applications.",
         "external_links": [{
             "title": "How I built alexgisby.me",
             "url": "https://github.com/alexgisby/alexgisby.me/blob/master/README.md"
         }],
-        "tags": ["javascript", "html", "css-sass", "reactjs", "express", "amazon-web-services"]
+        "tags": ["personal", "javascript", "html", "css-sass", "reactjs", "express", "amazon-web-services"]
     }, {
         "title": "Web Developer - Wallpaper.com (Time Inc)",
         "type": "work",
-        "dates": "2011 - 2012",
+        "dates": { "start": 2011, "end": 2012 },
         "description": "Developer for Wallpaper.com, an international website handling around 5.5 million page views a month. Based on Zend Framework, CodeIgniter and Akamai, with a MySQL database backend. Also created Wallpaper.cn a Chinese variant of the site requiring substantial refactoring to support multi-language content from CMS through to frontend.",
         "external_links": [{
             "title": "Read more on my LinkedIn profile",
             "url": "https://www.linkedin.com/in/alexgisby/"
         }],
-        "tags": ["php", "javascript", "html", "css-sass", "zend-framework", "mysql-postgres", "high-scale", "akamai-cloudfront", "behaviour-driven-development"]
+        "tags": ["work", "php", "javascript", "html", "css-sass", "zend-framework", "mysql-postgres", "high-scale", "akamai-cloudfront", "behaviour-driven-development"]
     }, {
         "title": "PHP MVC Developer - v4 Technical",
         "type": "work",
-        "dates": "2009 - 2011",
+        "dates": { "start": 2009, "end": 2011 },
         "description": "Building everything from e-commerce platforms to internal communication tools, usually in Kohana, with MySQL backends.",
         "external_links": [{
             "title": "Read more on my LinkedIn profile",
             "url": "https://www.linkedin.com/in/alexgisby/"
         }],
-        "tags": ["php", "javascript", "html", "css-sass", "mysql-postgres"]
+        "tags": ["work", "php", "javascript", "html", "css-sass", "mysql-postgres"]
     }, {
         "title": "PHP at the BBC - develop: BBC Conference",
         "type": "speaking",
-        "dates": "2016",
+        "dates": { "end": 2016 },
         "description": "An internally focused talk to advertise and promote the work myself and my team had done around working with PHP on AWS including the build tools, RPM repos and libraries for internal services we had created.",
         "external_links": [{
             "title": "develop:BBC website",
             "url": "http://www.bbc.co.uk/academy/technology/Develop-BBC-2016"
         }],
-        "tags": ["speaking", "php", "amazon-web-services"]
+        "tags": ["talks", "speaking", "php", "amazon-web-services"]
     }, {
         "title": "Building Next-gen Webapps at the BBC - FrontEnd Suffolk Talk",
         "type": "speaking",
-        "dates": "Jan 2015",
+        "dates": { "end": 2015 },
         "description": "A talk to the local web dev usergroup in my hometown about our work defining the new platform for building our web applications within the iPlayer Radio team at the BBC.",
         "external_links": [{
             "title": "FESuffolk Talk Page",
             "url": "http://www.fesuffolk.co.uk/talks/58"
         }],
-        "tags": ["speaking"]
+        "tags": ["talks", "speaking"]
     }, {
         "title": "imgur-album-downloader",
         "type": "code",
+        "dates": { "start": 2012, "end": 2017 },
         "description": "A little utility that quickly got out of hand, this was my first open-source Python project that has grown to a modest popularity. A cheeky way of grabbing the images from an Imgur album without going via the API. Really popular with certain Subreddit users, not sure why...",
         "external_links": [{
             "title": "imgur-album-downloader on GitHub",
             "url": "https://github.com/alexgisby/imgur-album-downloader"
         }],
-        "tags": ["python", "open-source"]
+        "tags": ["personal", "python", "open-source"]
     }, {
         "title": "Personal Projects",
         "type": "personal",
+        "dates": { "start": 2006, "end": 2017 },
         "description": "In my free time, I've experimented with creating board games in Javascript, equipment booking systems, RESTful calendar APIs, game dev with Unity and SDL and more besides that I couldn't hope to list here. If you're interested in what else I can or want to do, why not get in touch?",
         "external_links": [],
-        "tags": ["php", "silex", "javascript", "ruby", "html", "css-sass", "service-oriented-architecture-rest", "open-source"]
+        "tags": ["personal", "php", "silex", "javascript", "ruby", "html", "css-sass", "service-oriented-architecture-rest", "open-source"]
     }, {
         "title": "Scala Training",
         "type": "training",
-        "dates": "2016",
+        "dates": { "end": 2016 },
         "description": "A three day course taking a look into the Scala programming language, also covering functional programming.",
         "external_links": [],
-        "tags": ["scala"]
+        "tags": ["training", "scala"]
     }, {
         "title": "Architecting on AWS Training",
         "type": "training",
-        "dates": "2015",
+        "dates": { "end": 2015 },
         "description": "The official three day Architecting on AWS training in preparation for the Solution Architect - Associate exam.",
         "external_links": [{
             "title": "Architecting on AWS Course",
             "url": "https://aws.amazon.com/training/course-descriptions/architect/"
         }],
-        "tags": ["amazon-web-services"]
+        "tags": ["training", "amazon-web-services"]
     }, {
         "title": "Ruby & Cucumber Training",
         "type": "training",
-        "dates": "2014",
+        "dates": { "end": 2014 },
         "description": "A three day course around writing feature files, the ruby programming language and automating testing in a BDD way.",
         "external_links": [],
-        "tags": ["ruby", "behaviour-driven-development"]
+        "tags": ["training", "ruby", "behaviour-driven-development"]
+    }, {
+        "title": "Medium Writings",
+        "type": "writing",
+        "dates": { "end": 2017 },
+        "description": "Writing on Medium, articles mostly on the softer side of development - process and techniques mostly.",
+        "external_links": [{
+            "title": "@alexgisby on Medium",
+            "url": "https://medium.com/@alexgisby"
+        }],
+        "tags": ["personal", "writing"]
     }]
 };
 

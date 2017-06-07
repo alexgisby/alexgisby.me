@@ -44,6 +44,10 @@ var Project = function Project(data) {
             this.icon = 'graduation-cap';
             break;
 
+        case 'writing':
+            this.icon = 'edit';
+            break;
+
         default:
             this.icon = 'code';
             break;
