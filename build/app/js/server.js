@@ -55,6 +55,8 @@ app.get('*', function (req, res) {
             res.status(404);
         }
 
+        res.header('Cache-Control', 'max-age=60, public');
+
         var assetPath = new _AssetHelper2.default().assetPath();
         return res.render('layout', { markup: markup, assetPath: assetPath });
     });

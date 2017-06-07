@@ -34,6 +34,8 @@ app.get('*', (req, res) => {
                 res.status(404);
             }
 
+            res.header('Cache-Control', 'max-age=60, public');
+
             const assetPath = (new AssetHelper()).assetPath();
             return res.render('layout', {markup, assetPath});
         }
