@@ -29,6 +29,10 @@ export default class Project
                 this.icon = 'graduation-cap';
                 break;
 
+            case 'writing':
+                this.icon = 'edit';
+                break;
+
             default:
                 this.icon = 'code';
                 break;

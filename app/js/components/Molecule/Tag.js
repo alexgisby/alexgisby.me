@@ -7,6 +7,7 @@ export default class Tag extends React.Component
         const tag = this.props.tag;
 
         const colourClassMap = {
+            'experience': 'white',
             'languages': 'blue white-text',
             'frameworks': 'green white-text',
             'devops': 'yellow',

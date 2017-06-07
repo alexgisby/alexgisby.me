@@ -43,6 +43,28 @@ export default class Repository
         const projects = this.database.projects.filter(project => {
             return project.tags.indexOf(tag.getId()) !== -1;
         });
-        return projects.map(project => new Project(project));
+
+        let projectObjects = projects.map(project => new Project(project));
+        projectObjects.sort((a, b) => {
+            if (a.dates.end === b.dates.end) {
+                if (!a.dates.hasOwnProperty('start')) {
+                    return 1;
+                }
+                if (!b.dates.hasOwnProperty('start')) {
+                    return -1;
+                }
+
+                return (a.dates.start < b.dates.start)? 1 : -1;
+            }
+
+            if (a.dates.end < b.dates.end) {
+                return 1;
+            } else if (a.dates.end > b.dates.end) {
+                return -1;
+            }
+            return 0;
+        });
+
+        return projectObjects;
     }
 }

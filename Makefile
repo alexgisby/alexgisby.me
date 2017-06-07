@@ -1,5 +1,5 @@
 server:
-	NODE_ENV=production node_modules/.bin/babel-watch --presets react,es2015 bin/www
+	NODE_ENV=development node_modules/.bin/babel-watch --presets react,es2015 bin/www
 
 watch:
 	gulp watch
@@ -18,6 +18,10 @@ build: webpack sass
 
 deploy: build
 	claudia create --handler lambda.handler --deploy-proxy-api --region eu-west-1
+	node ./bin/deploy-assets.js
+
+update: build
+	claudia update
 	node ./bin/deploy-assets.js
 
 destroy:

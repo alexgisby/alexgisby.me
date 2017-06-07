@@ -15,8 +15,8 @@ export default class FooterSection extends React.Component
                             </p>
                             <p>
                                 <strong>
-                                    I <u>do not</u> reply to "I have a client..." emails. Contact me directly,
-                                    name the company or gtfo!
+                                    I <u>do not</u> reply to "I have a client..." emails. Please make sure to name
+                                    the company in any emails you send to me.
                                 </strong>
                             </p>
                         </div>

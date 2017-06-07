@@ -15,9 +15,12 @@ export default class Project extends React.Component
                             <i className={'jumbo fa fa-'+project.icon} />
                         </div>
 
-                        {project.dates &&
-                            <p className="project-dates center-align">{project.dates}</p>
-                        }
+                        <p className="project-dates center-align">
+                            {project.dates.start &&
+                                project.dates.start+' - '
+                            }
+                            {project.dates.end}
+                        </p>
 
                         {project.externalLinks.length > 0 &&
                             <ul className="external-links browser-default">
